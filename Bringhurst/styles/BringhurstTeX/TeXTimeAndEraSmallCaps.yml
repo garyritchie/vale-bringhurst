@@ -1,0 +1,9 @@
+extends: substitution
+message: "Set time and era abbreviations in small caps ('%s') instead of full-height '%s' (Bringhurst §3.2.2)."
+level: suggestion
+ignorecase: false
+nonword: true
+action:
+  name: replace
+swap:
+  '\b(AM|PM|BCE|CE|BC|AD)\b': '\textsc{\L$1}'

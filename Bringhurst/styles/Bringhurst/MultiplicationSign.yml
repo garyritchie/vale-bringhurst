@@ -1,0 +1,8 @@
+extends: substitution
+message: "Use the dimension sign ('%s') instead of the letter 'x' ('%s') (Bringhurst §5.3)."
+level: suggestion
+nonword: true
+swap:
+  '\b(\d+)\s*[xX]\s*(\d+)\b': '$1 × $2'
+action:
+  name: replace

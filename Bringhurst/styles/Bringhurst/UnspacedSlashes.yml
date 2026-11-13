@@ -1,0 +1,8 @@
+extends: substitution
+message: "Close spaces around '/' between single words ('%s') (Bringhurst §5.2.4)."
+level: suggestion
+nonword: true
+action:
+  name: replace
+swap:
+  '\b(\w+)[ \t]+/[ \t]+(\w+)\b': '$1/$2'

@@ -1,0 +1,9 @@
+extends: substitution
+message: "Use a non-breaking tie ('%s') instead of a breakable space ('%s') (Bringhurst §2.2.2)."
+level: suggestion
+nonword: true
+swap:
+  '\b(\d+(?:\.\d+)?)\s+(mm|cm|m|km|mg|g|kg|ms|s|Hz|kHz|MHz|GHz|KB|MB|GB|TB|px|pt|pc|em)\b': '$1~$2'
+  '\b(Fig\.|Figs\.|Eq\.|Eqs\.|Sec\.|Ch\.|Tab\.|Ref\.|No\.|Vol\.|pp\.)\s+(\d+)': '$1~$2'
+action:
+  name: replace

@@ -1,0 +1,9 @@
+extends: substitution
+message: "Omit terminal periods from headings and titles (Bringhurst §5.2.3)."
+level: warning
+scope: heading
+nonword: true
+action:
+  name: replace
+swap:
+  '(\w)\.$': '$1'

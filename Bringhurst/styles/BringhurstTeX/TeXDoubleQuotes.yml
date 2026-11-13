@@ -1,0 +1,6 @@
+extends: existence
+message: "Use TeX quotation marks (``...'' or \\enquote{...}) instead of straight '\"' (Bringhurst §5.1.1)."
+level: warning
+nonword: true
+raw:
+  - '"'

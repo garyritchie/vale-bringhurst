@@ -1,0 +1,8 @@
+extends: substitution
+message: "Use '%s' instead of '%s' for plural decades (Bringhurst §5.1.1)."
+level: suggestion
+nonword: true
+action:
+  name: replace
+swap:
+  '\b(\d{4})[''’]s\b': '$1s'

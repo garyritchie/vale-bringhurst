@@ -1,0 +1,10 @@
+extends: substitution
+message: "Use a spaced en-dash ('%s') instead of '%s' for parenthetical breaks (Bringhurst §5.2.1)."
+level: warning
+nonword: true
+swap:
+  '(\w)\s*---\s*(\w)': '$1 -- $2'
+  '(\w)—(\w)': '$1 – $2'
+  '(\w)--(\w)': '$1 -- $2'
+action:
+  name: replace

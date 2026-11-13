@@ -1,0 +1,8 @@
+extends: substitution
+message: "Use a literal spaced en-dash ('%s') instead of '%s'; Asciidoctor renders '--' as an em-dash (Bringhurst §5.2.1)."
+level: warning
+nonword: true
+swap:
+  '\s*—\s*': ' – '
+action:
+  name: replace

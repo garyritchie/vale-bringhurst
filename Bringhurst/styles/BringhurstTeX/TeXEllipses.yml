@@ -1,0 +1,8 @@
+extends: substitution
+message: "Use '%s' instead of '%s' for ellipses (Bringhurst §5.2.2)."
+level: warning
+nonword: true
+action:
+  name: replace
+swap:
+  '(?:\.[ \t]*){2,3}\.': '\dots'

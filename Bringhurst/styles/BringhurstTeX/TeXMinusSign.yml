@@ -1,0 +1,8 @@
+extends: substitution
+message: "Wrap negative numbers in math mode ('%s') to use a true minus sign instead of a hyphen (Bringhurst §5.3)."
+level: suggestion
+nonword: true
+action:
+  name: replace
+swap:
+  '(^|[\s(\[])-(\d+(?:\.\d+)?)\b': '$1$$-$2$$'

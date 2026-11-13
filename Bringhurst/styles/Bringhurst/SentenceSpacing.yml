@@ -1,0 +1,13 @@
+extends: existence
+message: "Use a single space after terminal punctuation instead of '%s' (Bringhurst §2.1.4)."
+level: warning
+nonword: true
+scope: paragraph
+raw:
+  - '[.!?]["”’\)\]]?[ \t]{2,}(?=[A-Z0-9“"‘''\(])'
+action:
+  name: edit
+  params:
+    - regex
+    - '([.!?]["”’\)\]]?)[ \t]{2,}'
+    - '$1 '

@@ -1,0 +1,9 @@
+extends: substitution
+message: "Use '%s' instead of full-height '%s' to preserve even page color (Bringhurst §3.2.2)."
+level: suggestion
+ignorecase: false
+nonword: true
+action:
+  name: replace
+swap:
+  '\b([A-Z]{4,})\b': '[.smallcaps]#$1#'

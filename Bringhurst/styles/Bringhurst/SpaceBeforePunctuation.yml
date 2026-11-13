@@ -1,0 +1,8 @@
+extends: substitution
+message: "Remove space before '%s' (Bringhurst §2.1.4)."
+level: warning
+nonword: true
+action:
+  name: replace
+swap:
+  '(\w)[ \t]+([,;:!?])': '$1$2'
