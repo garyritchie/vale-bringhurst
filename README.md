@@ -26,7 +26,7 @@ StylesPath = .vale/styles
 MinAlertLevel = suggestion
 
 # Use /releases/latest/download/Bringhurst.zip or pin a specific version tag
-Packages = [https://github.com/](https://github.com/garyritchie/vale-bringhurst/releases/latest/download/Bringhurst.zip)
+Packages = https://github.com/garyritchie/vale-bringhurst/releases/latest/download/Bringhurst.zip
 ```
 
 2. Download and unpack the styles:
