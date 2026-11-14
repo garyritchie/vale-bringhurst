@@ -21,30 +21,32 @@ Because this is a combined Vale package, `vale sync` automatically installs thre
 
 1. Create a `.vale.ini` file in the root of your book or documentation project:
 
-```ini
-StylesPath = .vale/styles
-MinAlertLevel = suggestion
+   ```ini
+   StylesPath = .vale/styles
+   MinAlertLevel = suggestion
 
-# Use /releases/latest/download/Bringhurst.zip or pin a specific version tag
-Packages = https://github.com/garyritchie/vale-bringhurst/releases/latest/download/Bringhurst.zip
-```
+   # Use /releases/latest/download/Bringhurst.zip or pin a specific version tag
+   Packages = https://github.com/garyritchie/vale-bringhurst/releases/latest/download/Bringhurst.zip
+
+   ```
 
 2. Download and unpack the styles:
 
-```bash
-vale sync
+   ```bash
+   vale sync
+   
+   ```
 
-```
+> **Note:** `vale sync` will not modify your project's root `.vale.ini`. Instead, it places the package's base configuration inside `.vale/styles/.vale-config/` and merges it automatically beneath your local `.vale.ini`. Run `vale ls-config` to verify the active merged settings.
 
 3. Add the synced directories to your project's `.gitignore` so upstream package files stay out of version control:
 
-```gitignore
-.vale/styles/.vale-config/
-.vale/styles/Bringhurst/
-.vale/styles/BringhurstAdoc/
-.vale/styles/BringhurstTeX/
-
-```
+   ```gitignore
+   .vale/styles/.vale-config/
+   .vale/styles/Bringhurst/
+   .vale/styles/BringhurstAdoc/
+   .vale/styles/BringhurstTeX/
+   ```
 
 ## Rule Reference
 

@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Package Bringhurst.zip
-        run: zip -r Bringhurst.zip Bringhurst/
+        run: zip -r Bringhurst.zip Bringhurst
 
       - name: Upload Release Asset
         uses: softprops/action-gh-release@v2
